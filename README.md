@@ -12,4 +12,6 @@ or
 $env:ARTIFACTORY_API_KEY=<your key>
 ```
 
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
