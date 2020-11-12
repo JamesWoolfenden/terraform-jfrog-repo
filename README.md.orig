@@ -1,0 +1,23 @@
+# Terraform with Artifactory
+
+Add an environmental variable for your API key - generated via the UI:
+
+```bash
+export ARTIFACTORY_API_KEY=<your key>
+```
+
+or
+
+```powershell
+$env:ARTIFACTORY_API_KEY=<your key>
+```
+You can obtain tokens from the security settings UI and API tokens from your user profile settings. 
+
+<<<<<<< HEAD
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
+=======
+
+https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
+>>>>>>> 0a883ecd31882f280e75f534f3e16401d41e536f
