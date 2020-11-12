@@ -11,6 +11,7 @@ or
 ```powershell
 $env:ARTIFACTORY_API_KEY=<your key>
 ```
+You can obtain tokens from the security settings UI and API tokens from your user profile settings. 
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
