@@ -11,5 +11,7 @@ or
 ```powershell
 $env:ARTIFACTORY_API_KEY=<your key>
 ```
+You can obtain tokens from the security settings UI and API tokens from your user profile settings. 
+
 
 https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
