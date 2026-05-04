@@ -13,21 +13,21 @@ jobs:
         python-version: [3.7]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: master
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: ${{ matrix.python-version }}
       - name: "Terraform Init"
-        uses: hashicorp/terraform-github-actions@master
+        uses: hashicorp/terraform-github-actions@b2ca17c0c25198c67c668c37edcbc45ca086a91e # v0.8.0
         with:
           tf_actions_version: 0.13.0
           tf_actions_subcommand: "init"
           tf_actions_working_dir: "example/examplea"
       - name: "Terraform Validate"
-        uses: hashicorp/terraform-github-actions@master
+        uses: hashicorp/terraform-github-actions@b2ca17c0c25198c67c668c37edcbc45ca086a91e # v0.8.0
         with:
           tf_actions_version: 0.13.0
           tf_actions_subcommand: "validate"
@@ -40,9 +40,9 @@ jobs:
     name: versioning
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@master
+        uses: anothrNick/github-tag-action@4ed44965e0db8dab2b466a16da04aec3cc312fd8 # 1.75.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
